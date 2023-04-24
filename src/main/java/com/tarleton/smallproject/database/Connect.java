@@ -14,7 +14,7 @@ public class Connect {
 
     public static void connect() {
         try {
-            String url = "jdbc:sqlite:" + System.getProperty("user.dir") + "/src/main/java/smallproject/resources/banksqlfile.db";
+            String url = "jdbc:sqlite:" + System.getProperty("user.dir") + "/src/main/resources/banksqlfile.db";
             conn = DriverManager.getConnection(url);
 
             System.out.println("Connected to database.");
